@@ -9,3 +9,8 @@
 .center{
     width: 50%;
 }
+
+.status{
+    list-style: none;
+    margin-left: -10px;
+}
