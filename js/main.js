@@ -9,8 +9,12 @@ $("#menu-toggle").click(function(e) {
     $("#sidebar-wrapper").toggleClass("active");
 });
 
-// Scrolls to the selected menu item on the page
+
 $(function() {
+    // live search
+    $('#search').hideseek();
+
+    // Scrolls to the selected menu item on the page
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
@@ -25,4 +29,3 @@ $(function() {
         }
     });
 });
-
