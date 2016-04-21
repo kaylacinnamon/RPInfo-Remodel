@@ -42,36 +42,34 @@
 </nav>
 <div class="container">
     <h2>RPI Directory</h2>
-    <div class="center">
-        <div class="col-lg-6 search">
-            <p>Search for Students:</p>
-            <div class="input-group">
-
-                        <span class="input-group-btn">
-								<button class="btn btn-secondary" type="button" >Submit</button>
-							</span>
-                <input type="text" class="form-control" placeholder="Search for...">
-            </div>
-
-        </div>
-        <div class="col-lg-6 search">
-            <p>Search for Faculty and Staff:</p>
-            <div class="input-group">
-
-                        <span class="input-group-btn">
-								<button class="btn btn-secondary" type="button" >Submit</button>
-							</span>
-                <input type="text" class="form-control" placeholder="Search for...">
-            </div>
-
-        </div>
-        <div class="col-lg-6 search">
-            <p>Search for Organizations:</p>
-            <div class="input-group">
-                        <span class="input-group-btn">
-								<button class="btn btn-secondary" type="button" >Submit</button>
-							</span>
-                <input type="text" class="form-control" placeholder="Search for...">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="input-group" id="adv-search">
+                    <input type="text" class="form-control" placeholder="Search for snippets" />
+                    <div class="input-group-btn">
+                        <div class="btn-group" role="group">
+                            <div class="dropdown dropdown-lg">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label for="filter">Filter by</label>
+                                            <select id="filter" class="form-control">
+                                                <option value="0" selected>Students</option>
+                                                <option value="1">Faculty and Staff</option>
+                                                <option value="2">Organizations</option>
+                                                <option value="3">Everyone</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
