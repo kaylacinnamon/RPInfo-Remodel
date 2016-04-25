@@ -19,14 +19,12 @@ function renderDirectory(dir, query, type) {
 
             if(elem.type === "Organization") {
                 var head = findPerson(dir, elem.head);
-                card.append($('<p>').text("Head: " + head.fname + ' ' + head.lname));
+                card.append($('<p>').text("Head: " + ((head.fname + ' ' + head.lname) || head.rcs)));
                 card.append($('<a>').attr('href', elem.homepage).text('View Homepage'));
             } else {
                 card.append($('<p>').text(elem.department || elem.curriculum));
                 card.append($('<a>').attr('href', elem.rcs + '@rpi.edu').text(elem.rcs + '@rpi.edu'));
             }
-
-
 
             listingDiv.append($('<div>').attr('class', 'col-md-3 col-sm-4').append(card));
         }
