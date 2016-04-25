@@ -62,6 +62,39 @@ hr {
     border-bottom-left-radius: 4px;
 }
 
+#directoryListing {
+    margin-top: 15px;
+}
+
+.directory-card {
+    background-color: #EEE;
+    height: 129px;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 10px 15px;
+}
+
+.directory-card h4 {
+    margin-bottom: 6px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.directory-card p {
+    margin-bottom: 3px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.directory-card a.email {
+    font-size: 9pt;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
     #adv-search {
         width: 500px;
