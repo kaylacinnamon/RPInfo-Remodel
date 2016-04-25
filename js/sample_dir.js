@@ -61,6 +61,21 @@ var dir = [
     "homepage": "http://www.rpi.edu/~bennett"
   },
   {
+    "rcs": "kimbam2",
+    "type": "Faculty and Staff",
+    "fname": "Miles",
+    "mname": "A",
+    "lname": "Kimball",
+    "title": "Professor & Department Head",
+    "department": "Communication and Media",
+    "telephone": "518-276-8264",
+    "fax": "518-276-4092",
+    "office": "4403 Russell Sage Laboratory (SAGE)",
+    "mailstop": "SA Sage Bldg",
+    "mailing": "Miles A Kimball\nSA Sage Bldg\nRensselaer Polytechnic Institute\n110 8th Street\nTroy, NY 12180",
+    "homepage": "http://www.rpi.edu/~bennett"
+  },
+  {
     "rcs": "president",
     "type": "Faculty and Staff",
     "fname": "Shirley Ann",
@@ -96,7 +111,8 @@ var dir = [
       "coppee",
       "osburk",
       "mooree3"
-    ]
+    ],
+    "head": "kimbam2"
   }
 ]
 

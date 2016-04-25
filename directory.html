@@ -40,24 +40,15 @@
                 <input type="text" id="searchField" class="form-control" placeholder="Search for people or organizations" />
                 <div class="input-group-btn">
                     <div class="btn-group" role="group">
-                        <div class="dropdown dropdown-lg">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" id="filterBtn">
-                                Everyone <span class="caret"></span>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right" role="menu">
-                                <form class="form" role="form">
-                                    <div class="form-group">
-                                        <label for="filter">Filter by</label><br>
-                                        <select id="filter" class="form-control">
-                                            <option value="Everyone" selected>Everyone</option>
-                                            <option value="Students">Students</option>
-                                            <option value="Faculty and Staff">Faculty and Staff</option>
-                                            <option value="Organizations">Organizations</option>
-                                        </select>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="filterBtn">
+                            Everyone <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a onclick="setFilter('Everyone')">Everyone</a></li>
+                          <li><a onclick="setFilter('Students')">Students</a></li>
+                          <li><a onclick="setFilter('Faculty and Staff')">Faculty and Staff</a></li>
+                          <li><a onclick="setFilter('Organizations')">Organizations</a></li>
+                        </ul>
                         <button type="button" class="btn btn-primary" id="searchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
                 </div>
