@@ -6,13 +6,17 @@
     border-radius: 0;
 }
 
+.right {
+    margin-top: -25px;
+}
+
 .center{
     width: 50%;
 }
 
 .status{
     list-style: none;
-    margin-left: -10px;
+    margin-left: -40px;
 }
 
 .navbar-brand{
