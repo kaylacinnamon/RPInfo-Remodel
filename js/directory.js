@@ -3,6 +3,7 @@ function renderDirectory(dir, query, type) {
 
     if(type === 'Students') type = 'Student';
     if(type === 'Organizations') type = 'Organization';
+    if(type === 'FacultyandStaff') type = 'Faculty and Staff';
 
     // reset
     listingDiv.empty();
