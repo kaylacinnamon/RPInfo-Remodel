@@ -73,7 +73,7 @@ var dir = [
     "office": "4403 Russell Sage Laboratory (SAGE)",
     "mailstop": "SA Sage Bldg",
     "mailing": "Miles A Kimball\nSA Sage Bldg\nRensselaer Polytechnic Institute\n110 8th Street\nTroy, NY 12180",
-    "homepage": "http://www.rpi.edu/~bennett"
+    "homepage": "http://www.rpi.edu/~kimbam2"
   },
   {
     "rcs": "president",
