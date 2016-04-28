@@ -9,10 +9,12 @@ function renderDirectory(dir, query, type) {
 
     dir.forEach(function (elem) {
         // Ignore element if not in search results
-        if(query && !searchForOccurrences(elem, query)) return;
+        if(query && !searchForOccurrences(elem, query)) { return; }
 
         // Ensure the filter is respected. Respect the filter!
         if(type === "Everyone" || elem.type === type) {
+            console.log("HERE");
+
             var card = $('<div>').attr('class', 'directory-card');
             card.append($('<h4>').text(elem.name || (elem.fname + ' ' + elem.lname)));
             card.append($('<p>').text(elem.title || elem.class || elem.super));
@@ -36,6 +38,7 @@ function searchForOccurrences (elem, query) {
     for(key in elem) {
         if(elem[key] && typeof elem[key] === 'string' && elem[key].toLowerCase().indexOf(query.toLowerCase())!=-1) {
             found = true;
+            console.log('found')
         }
     }
     return found;
@@ -59,12 +62,12 @@ $(function() {
 
     // Executes search
     $('#searchBtn').click(function (event) {
-        renderDirectory(getDir(), $("#searchField").val(), $('#filter').val());
+        renderDirectory(getDir(), $("#searchField").val(), $('#filterBtn').text().replace(/\s/g, ''));
     })
 
     $('#searchField').keypress(function (e) {
         if (e.which == 13) {
-            renderDirectory(getDir(), $("#searchField").val(), $('#filter').val());
+            renderDirectory(getDir(), $("#searchField").val(), $('#filterBtn').text().replace(/\s/g, ''));
             return false;
         }
     });
